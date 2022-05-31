@@ -391,23 +391,6 @@
 	</test>
 	<test>
 		<testCaseName>jck-runtime-api-java_applet</testCaseName>
-		<disables>
-			<disable>
-				<comment>Disabled on osx for infrastructure/issues/5254; on aix for backlog/issues/486. Awaiting some automation improvements, in the interim these targets will be run manually</comment>
-				<platform>x86-64_mac|ppc64_aix</platform>
-				<impl>ibm</impl>
-			</disable>
-			<disable>
-				<comment>Disabled on osx for infrastructure/issues/5254; on aix for backlog/issues/486. Awaiting some automation improvements, in the interim these targets will be run manually</comment>
-				<platform>x86-64_mac|ppc64_aix</platform>
-				<impl>openj9</impl>
-			</disable>
-  			<disable>
-				<comment>Requires UI https://github.com/temurin-compliance/temurin-compliance/issues/29</comment>
-				<platform>x86-64_mac</platform>
-				<impl>hotspot</impl>
- 			</disable>
-		</disables>
 		<variations>
 			<variation>NoOptions</variation>
 		</variations>
