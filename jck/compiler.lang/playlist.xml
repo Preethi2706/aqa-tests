@@ -187,7 +187,7 @@
 		<variations>
 			<variation>NoOptions</variation>
 		</variations>
-		<command>$(JCK_CMD_TEMPLATE) tests=$(COMPILER_LANG_EXPR_TESTS_GROUP1) jckRoot=$(JCK_ROOT) jckversion=$(JCK_VERSION) testsuite=COMPILER; \
+		<command>$(JCK_CMD_TEMPLATE) tests= lang/EXPR testsuite=COMPILER; \
 	$(TEST_STATUS)</command>
 		<levels>
 			<level>extended</level>
