@@ -809,7 +809,7 @@ public class JavaTestRunner {
 				javatestAgent = startSubProcess("javatestAgent",javatestAgentCmd);
 
 				// We only need RMI registry and RMI activation daemon processes for tests under api/java_rmi
-				if (tests.contains("api/java_rmi") && 
+				if ((tests.contains("api/java_rmi") || tests.contains("api/javax_xml")) && 
 					(jckVersion.contains("jck8") || jckVersion.contains("jck11") || jckVersion.contains("jck16"))) {
 					String pathToRmiRegistry = testJdk + File.separator + "bin" + File.separator + "rmiregistry";
 					List<String> rmiRegistryCmd = new ArrayList<>();
